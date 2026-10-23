@@ -1,0 +1,43 @@
+{
+  "model": "Fine-tuned ResNet50",
+  "test_images": 1584,
+  "class_order": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "accuracy": 0.8535353535353535,
+  "macro_precision": 0.8535178168507163,
+  "macro_recall": 0.8523295069909131,
+  "macro_f1": 0.8513488554561813,
+  "weighted_precision": 0.8541210986492801,
+  "weighted_recall": 0.8535353535353535,
+  "weighted_f1": 0.8522527638816347,
+  "confusion_matrix": [
+    [
+      279,
+      64,
+      40,
+      3
+    ],
+    [
+      52,
+      320,
+      21,
+      5
+    ],
+    [
+      2,
+      3,
+      391,
+      4
+    ],
+    [
+      18,
+      20,
+      0,
+      362
+    ]
+  ]
+}

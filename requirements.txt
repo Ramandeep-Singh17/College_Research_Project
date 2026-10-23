@@ -1,0 +1,15 @@
+
+streamlit
+tensorflow
+numpy
+pillow
+matplotlib
+pandas
+scikit-learn
+opencv-python-headless
+grad-cam
+shap
+lime
+groq
+plotly
+scikit-image
