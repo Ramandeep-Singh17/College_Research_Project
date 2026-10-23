@@ -132,8 +132,20 @@ def find_file(name: str) -> Path | None:
         p = d / name
         if p.is_file():
             return p
-    return None
 
+    if name == MODEL_FILE:
+        from huggingface_hub import hf_hub_download
+
+        try:
+            model_path = hf_hub_download(
+                repo_id="Ramandeep17/brain-tumor-resnet50",
+                filename="resnet50_finetuned.keras"
+            )
+            return Path(model_path)
+        except Exception as e:
+            st.error(f"Could not download model from Hugging Face: {e}")
+
+    return None
 
 @st.cache_data(show_spinner=False)
 def read_json(path_str: str, mtime: float):
