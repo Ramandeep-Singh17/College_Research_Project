@@ -13,3 +13,4 @@ lime
 groq
 plotly
 scikit-image
+huggingface_hub
